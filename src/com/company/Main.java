@@ -65,7 +65,7 @@ public class Main {
         try{
             SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
             SOAPConnection soapConnection = soapConnectionFactory.createConnection();
-            String url = "http://192.168.1.52:8080/mock/soap/project/6wVj45/DSServiceV3Soap";
+            String url = "http://10.224.128.93/DSService/DSServiceV3.asmx";
             SOAPMessage soapRequest = createSoapRequest();
             //hit soapRequest to the server to get response
             SOAPMessage soapResponse = soapConnection.call(soapRequest, url);
